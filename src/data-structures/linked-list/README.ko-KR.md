@@ -10,7 +10,7 @@ _Read this in other languages:_
 
 ![Linked List](./images/linked-list.jpeg)
 
-*Made with [okso.app](https://okso.app)*
+_Made with [okso.app](https://okso.app)_
 
 ## 기본 연산에 대한 수도코드
 
@@ -137,9 +137,9 @@ end ReverseTraversal
 
 ### 시간 복잡도
 
-|  접근   |  탐색   |  삽입   |  삭제   |
-| :---: | :---: | :---: | :---: |
-| O(n)  | O(n)  | O(1)  | O(n)  |
+| 접근 | 탐색 | 삽입 | 삭제 |
+| :--: | :--: | :--: | :--: |
+| O(n) | O(n) | O(1) | O(n) |
 
 ### 공간 복잡도
 

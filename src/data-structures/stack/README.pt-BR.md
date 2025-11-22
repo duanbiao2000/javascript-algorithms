@@ -3,8 +3,8 @@
 Na ciência da computação, uma **pilha** é uma estrutura de dados abstrata
 que serve como uma coleção de elementos com duas operações principais:
 
-* **push**, pela qual adiciona um elemento à coleção, e
-* **pop**, pela qual remove o último elemento adicionado.
+- **push**, pela qual adiciona um elemento à coleção, e
+- **pop**, pela qual remove o último elemento adicionado.
 
 A ordem em que os elementos saem de um _stack_ dá origem ao seu
 nome alternativo, LIFO (last in, first out). Adicionalmente, uma operação
@@ -20,9 +20,9 @@ _push_ e _pop_.
 
 ![Stack](./images/stack.jpeg)
 
-*Made with [okso.app](https://okso.app)*
+_Made with [okso.app](https://okso.app)_
 
 ## Referências
 
-- [Wikipedia](https://en.wikipedia.org/wiki/Stack_(abstract_data_type))
+- [Wikipedia](<https://en.wikipedia.org/wiki/Stack_(abstract_data_type)>)
 - [YouTube](https://www.youtube.com/watch?v=wjI1WNcIntg&list=PLLXdhg_r2hKA7DPDsunoDZ-Z769jWn4R8&index=3&)

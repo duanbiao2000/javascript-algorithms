@@ -3,14 +3,9 @@ import factorial from '../../../math/factorial/factorial';
 
 describe('combineWithRepetitions', () => {
   it('should combine string with repetitions', () => {
-    expect(combineWithRepetitions(['A'], 1)).toEqual([
-      ['A'],
-    ]);
+    expect(combineWithRepetitions(['A'], 1)).toEqual([['A']]);
 
-    expect(combineWithRepetitions(['A', 'B'], 1)).toEqual([
-      ['A'],
-      ['B'],
-    ]);
+    expect(combineWithRepetitions(['A', 'B'], 1)).toEqual([['A'], ['B']]);
 
     expect(combineWithRepetitions(['A', 'B'], 2)).toEqual([
       ['A', 'A'],
@@ -49,10 +44,14 @@ describe('combineWithRepetitions', () => {
 
     const combinationOptions = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'];
     const combinationSlotsNumber = 4;
-    const combinations = combineWithRepetitions(combinationOptions, combinationSlotsNumber);
+    const combinations = combineWithRepetitions(
+      combinationOptions,
+      combinationSlotsNumber
+    );
     const n = combinationOptions.length;
     const r = combinationSlotsNumber;
-    const expectedNumberOfCombinations = factorial((r + n) - 1) / (factorial(r) * factorial(n - 1));
+    const expectedNumberOfCombinations =
+      factorial(r + n - 1) / (factorial(r) * factorial(n - 1));
 
     expect(combinations.length).toBe(expectedNumberOfCombinations);
   });

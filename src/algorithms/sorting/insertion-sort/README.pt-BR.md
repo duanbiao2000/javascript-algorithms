@@ -13,9 +13,9 @@ ordenar.
 
 ## Complexidade
 
-| Nome                  | Melhor            | Média             | Pior               | Memória    | Estável    | Comentários  |
-| --------------------- | :-------------: | :-----------------: | :-----------------: | :-------: | :-------: | :-------- |
-| **Insertion sort**    | n               | n<sup>2</sup>       | n<sup>2</sup>       | 1         | Sim       |           |
+| Nome               | Melhor |     Média     |     Pior      | Memória | Estável | Comentários |
+| ------------------ | :----: | :-----------: | :-----------: | :-----: | :-----: | :---------- |
+| **Insertion sort** |   n    | n<sup>2</sup> | n<sup>2</sup> |    1    |   Sim   |             |
 
 ## Referências
 

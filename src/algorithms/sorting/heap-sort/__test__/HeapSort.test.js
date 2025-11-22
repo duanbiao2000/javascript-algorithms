@@ -32,7 +32,7 @@ describe('HeapSort', () => {
     SortTester.testAlgorithmTimeComplexity(
       HeapSort,
       equalArr,
-      EQUAL_ARRAY_VISITING_COUNT,
+      EQUAL_ARRAY_VISITING_COUNT
     );
   });
 
@@ -40,7 +40,7 @@ describe('HeapSort', () => {
     SortTester.testAlgorithmTimeComplexity(
       HeapSort,
       sortedArr,
-      SORTED_ARRAY_VISITING_COUNT,
+      SORTED_ARRAY_VISITING_COUNT
     );
   });
 
@@ -48,7 +48,7 @@ describe('HeapSort', () => {
     SortTester.testAlgorithmTimeComplexity(
       HeapSort,
       notSortedArr,
-      NOT_SORTED_ARRAY_VISITING_COUNT,
+      NOT_SORTED_ARRAY_VISITING_COUNT
     );
   });
 
@@ -56,7 +56,7 @@ describe('HeapSort', () => {
     SortTester.testAlgorithmTimeComplexity(
       HeapSort,
       reverseArr,
-      REVERSE_SORTED_ARRAY_VISITING_COUNT,
+      REVERSE_SORTED_ARRAY_VISITING_COUNT
     );
   });
 });

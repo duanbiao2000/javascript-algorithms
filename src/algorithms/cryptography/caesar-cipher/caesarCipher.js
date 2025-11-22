@@ -10,19 +10,18 @@ const englishAlphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
  * @return {Object} - i.e. {'a': 'd', 'b': 'e', 'c': 'f', ..., 'z': 'c'}
  */
 const getCipherMap = (alphabet, shift) => {
-  return alphabet
-    .reduce((charsMap, currentChar, charIndex) => {
-      const charsMapClone = { ...charsMap };
-      // Making the shift to be cyclic (i.e. with a shift of 1 - 'z' would be mapped to 'a').
-      let encryptedCharIndex = (charIndex + shift) % alphabet.length;
-      // Support negative shifts for creating a map for decryption
-      // (i.e. with shift -1 - 'a' would be mapped to 'z').
-      if (encryptedCharIndex < 0) {
-        encryptedCharIndex += alphabet.length;
-      }
-      charsMapClone[currentChar] = alphabet[encryptedCharIndex];
-      return charsMapClone;
-    }, {});
+  return alphabet.reduce((charsMap, currentChar, charIndex) => {
+    const charsMapClone = { ...charsMap };
+    // Making the shift to be cyclic (i.e. with a shift of 1 - 'z' would be mapped to 'a').
+    let encryptedCharIndex = (charIndex + shift) % alphabet.length;
+    // Support negative shifts for creating a map for decryption
+    // (i.e. with shift -1 - 'a' would be mapped to 'z').
+    if (encryptedCharIndex < 0) {
+      encryptedCharIndex += alphabet.length;
+    }
+    charsMapClone[currentChar] = alphabet[encryptedCharIndex];
+    return charsMapClone;
+  }, {});
 };
 
 /**

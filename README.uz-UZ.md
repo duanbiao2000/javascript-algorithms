@@ -193,7 +193,6 @@ Algorithmic paradigm - bu algoritmlar sinfini loyihalashtirishga asos bo'lib xiz
   - `A` [Prim Algoritmi](src/algorithms/graph/prim) - og'irlikdagi yo'naltirilmagan grafik uchun Minimal kengayuvchi daraxtni (MST) topish
   - `A` [Kruskal Algoritmi](src/algorithms/graph/kruskal) - og'irlikdagi yo'naltirilmagan grafik uchun Minimal kengayuvchi daraxtni (MST) topish
 - **Divide and Conquer** - muammoni kichikroq qismlarga bo'lib va keyin bu qismlarni hal qilish
-
   - `B` [Ikkilik qidiruv](src/algorithms/search/binary-search)
   - `B` [Xanoy minorasi](src/algorithms/uncategorized/hanoi-tower)
   - `B` [Paskal uchburchagi](src/algorithms/math/pascal-triangle)

@@ -20,7 +20,7 @@ com listas encadeadas (linked lists).
 
 ![Linked List](./images/linked-list.jpeg)
 
-*Made with [okso.app](https://okso.app)*
+_Made with [okso.app](https://okso.app)_
 
 ## Pseudo código para Operações Básicas
 
@@ -147,7 +147,7 @@ end ReverseTraversal
 
 | Acesso | Pesquisa | Inserção | Remoção |
 | :----: | :------: | :------: | :-----: |
-|  O(n)  |  O(n)    |  O(1)    |  O(n)   |
+|  O(n)  |   O(n)   |   O(1)   |  O(n)   |
 
 ### Complexidade de Espaçø
 

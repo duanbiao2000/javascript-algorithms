@@ -12,9 +12,9 @@
 
 ## 복잡도
 
-| Name                  | Best            | Average             | Worst               | Memory    | Stable    | Comments  |
-| --------------------- | :-------------: | :-----------------: | :-----------------: | :-------: | :-------: | :-------- |
-| **Merge sort**        | n&nbsp;log(n)   | n&nbsp;log(n)       | n&nbsp;log(n)       | n         | Yes       |           |
+| Name           |     Best      |    Average    |     Worst     | Memory | Stable | Comments |
+| -------------- | :-----------: | :-----------: | :-----------: | :----: | :----: | :------- |
+| **Merge sort** | n&nbsp;log(n) | n&nbsp;log(n) | n&nbsp;log(n) |   n    |  Yes   |          |
 
 ## 참조
 

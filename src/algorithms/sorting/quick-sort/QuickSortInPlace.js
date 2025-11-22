@@ -16,7 +16,7 @@ export default class QuickSortInPlace extends Sort {
     originalArray,
     inputLowIndex = 0,
     inputHighIndex = originalArray.length - 1,
-    recursiveCall = false,
+    recursiveCall = false
   ) {
     // Copies array on initial call, and then sorts in place.
     const array = recursiveCall ? originalArray : [...originalArray];
@@ -49,7 +49,11 @@ export default class QuickSortInPlace extends Sort {
       this.callbacks.visitingCallback(pivot);
 
       let partitionIndex = lowIndex;
-      for (let currentIndex = lowIndex; currentIndex < highIndex; currentIndex += 1) {
+      for (
+        let currentIndex = lowIndex;
+        currentIndex < highIndex;
+        currentIndex += 1
+      ) {
         if (this.comparator.lessThan(array[currentIndex], pivot)) {
           swap(partitionIndex, currentIndex);
           partitionIndex += 1;

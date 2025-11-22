@@ -13,11 +13,15 @@ function sequencesApproximatelyEqual(sequence1, sequence2, delta) {
   }
 
   for (let numberIndex = 0; numberIndex < sequence1.length; numberIndex += 1) {
-    if (Math.abs(sequence1[numberIndex].re - sequence2[numberIndex].re) > delta) {
+    if (
+      Math.abs(sequence1[numberIndex].re - sequence2[numberIndex].re) > delta
+    ) {
       return false;
     }
 
-    if (Math.abs(sequence1[numberIndex].im - sequence2[numberIndex].im) > delta) {
+    if (
+      Math.abs(sequence1[numberIndex].im - sequence2[numberIndex].im) > delta
+    ) {
       return false;
     }
   }
@@ -34,8 +38,12 @@ describe('fastFourierTransform', () => {
     const output = fastFourierTransform(input);
     const invertedOutput = fastFourierTransform(output, true);
 
-    expect(sequencesApproximatelyEqual(expectedOutput, output, delta)).toBe(true);
-    expect(sequencesApproximatelyEqual(input, invertedOutput, delta)).toBe(true);
+    expect(sequencesApproximatelyEqual(expectedOutput, output, delta)).toBe(
+      true
+    );
+    expect(sequencesApproximatelyEqual(input, invertedOutput, delta)).toBe(
+      true
+    );
   });
 
   it('should calculate the radix-2 discrete fourier transform #2', () => {
@@ -55,8 +63,12 @@ describe('fastFourierTransform', () => {
     const output = fastFourierTransform(input);
     const invertedOutput = fastFourierTransform(output, true);
 
-    expect(sequencesApproximatelyEqual(expectedOutput, output, delta)).toBe(true);
-    expect(sequencesApproximatelyEqual(input, invertedOutput, delta)).toBe(true);
+    expect(sequencesApproximatelyEqual(expectedOutput, output, delta)).toBe(
+      true
+    );
+    expect(sequencesApproximatelyEqual(input, invertedOutput, delta)).toBe(
+      true
+    );
   });
 
   it('should calculate the radix-2 discrete fourier transform #3', () => {
@@ -79,13 +91,13 @@ describe('fastFourierTransform', () => {
       new ComplexNumber({ re: -305990.9040412, im: 68224.8435751 }),
       new ComplexNumber({ re: -14135.7758282, im: 199223.9878095 }),
       new ComplexNumber({ re: -306965.6350922, im: 26030.1025439 }),
-      new ComplexNumber({ re: -76477.6755206, im: 40781.9078990 }),
+      new ComplexNumber({ re: -76477.6755206, im: 40781.907899 }),
       new ComplexNumber({ re: -48409.3099088, im: 54674.7959662 }),
       new ComplexNumber({ re: -329683.0131713, im: 164287.7995937 }),
       new ComplexNumber({ re: -50485.2048527, im: -330375.0546527 }),
       new ComplexNumber({ re: 122235.7738708, im: 91091.6398019 }),
       new ComplexNumber({ re: 47625.8850387, im: 73497.3981523 }),
-      new ComplexNumber({ re: -15619.8231136, im: 80804.8685410 }),
+      new ComplexNumber({ re: -15619.8231136, im: 80804.868541 }),
       new ComplexNumber({ re: 192234.0276101, im: 160833.3072355 }),
       new ComplexNumber({ re: -96389.4195635, im: 393408.4543872 }),
       new ComplexNumber({ re: -173449.0825417, im: 146875.7724104 }),
@@ -95,7 +107,11 @@ describe('fastFourierTransform', () => {
     const output = fastFourierTransform(input);
     const invertedOutput = fastFourierTransform(output, true);
 
-    expect(sequencesApproximatelyEqual(expectedOutput, output, delta)).toBe(true);
-    expect(sequencesApproximatelyEqual(input, invertedOutput, delta)).toBe(true);
+    expect(sequencesApproximatelyEqual(expectedOutput, output, delta)).toBe(
+      true
+    );
+    expect(sequencesApproximatelyEqual(input, invertedOutput, delta)).toBe(
+      true
+    );
   });
 });

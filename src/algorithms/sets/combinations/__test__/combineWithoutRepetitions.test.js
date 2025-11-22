@@ -6,18 +6,11 @@ describe('combineWithoutRepetitions', () => {
   it('should combine string without repetitions', () => {
     expect(combineWithoutRepetitions(['A', 'B'], 3)).toEqual([]);
 
-    expect(combineWithoutRepetitions(['A', 'B'], 1)).toEqual([
-      ['A'],
-      ['B'],
-    ]);
+    expect(combineWithoutRepetitions(['A', 'B'], 1)).toEqual([['A'], ['B']]);
 
-    expect(combineWithoutRepetitions(['A'], 1)).toEqual([
-      ['A'],
-    ]);
+    expect(combineWithoutRepetitions(['A'], 1)).toEqual([['A']]);
 
-    expect(combineWithoutRepetitions(['A', 'B'], 2)).toEqual([
-      ['A', 'B'],
-    ]);
+    expect(combineWithoutRepetitions(['A', 'B'], 2)).toEqual([['A', 'B']]);
 
     expect(combineWithoutRepetitions(['A', 'B', 'C'], 2)).toEqual([
       ['A', 'B'],
@@ -51,10 +44,14 @@ describe('combineWithoutRepetitions', () => {
 
     const combinationOptions = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'];
     const combinationSlotsNumber = 4;
-    const combinations = combineWithoutRepetitions(combinationOptions, combinationSlotsNumber);
+    const combinations = combineWithoutRepetitions(
+      combinationOptions,
+      combinationSlotsNumber
+    );
     const n = combinationOptions.length;
     const r = combinationSlotsNumber;
-    const expectedNumberOfCombinations = factorial(n) / (factorial(r) * factorial(n - r));
+    const expectedNumberOfCombinations =
+      factorial(n) / (factorial(r) * factorial(n - r));
 
     expect(combinations.length).toBe(expectedNumberOfCombinations);
 

@@ -10,12 +10,7 @@
 
 import euclideanDistance from '../../math/euclidean-distance/euclideanDistance';
 
-export default function kNN(
-  dataSet,
-  labels,
-  toClassify,
-  k = 3,
-) {
+export default function kNN(dataSet, labels, toClassify, k = 3) {
   if (!dataSet || !labels || !toClassify) {
     throw new Error('Either dataSet or labels or toClassify were not set');
   }
@@ -32,12 +27,14 @@ export default function kNN(
 
   // Sort distances list (from closer point to further ones).
   // Take initial k values, count with class index
-  const kNearest = distances.sort((a, b) => {
-    if (a.dist === b.dist) {
-      return 0;
-    }
-    return a.dist < b.dist ? -1 : 1;
-  }).slice(0, k);
+  const kNearest = distances
+    .sort((a, b) => {
+      if (a.dist === b.dist) {
+        return 0;
+      }
+      return a.dist < b.dist ? -1 : 1;
+    })
+    .slice(0, k);
 
   // Count the number of instances of each class in top k members.
   const labelsCounter = {};

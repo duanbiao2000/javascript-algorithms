@@ -10,7 +10,6 @@ _Đọc bằng ngôn ngữ khác:_
 [_Türkçe_](README.tr-TR.md),
 [_Українська_](README.uk-UA.md)
 
-
 Trong khoa học máy tính, một danh sách liên kết là một bộ sưu tập tuyến tính
 các phần tử dữ liệu, trong đó thứ tự tuyến tính không được xác định bởi
 vị trí vật lý của chúng trong bộ nhớ. Thay vào đó, mỗi
@@ -29,14 +28,15 @@ như truy cập ngẫu nhiên, là không khả thi. Mảng
 có độ tương phản cache tốt hơn so với danh sách liên kết.
 
 ![Linked List](./images/linked-list.jpeg)
-*Được làm từ [okso.app](https://okso.app)*
+_Được làm từ [okso.app](https://okso.app)_
 
 ## Mã giải (Pseudocode) cho Các Hoạt Động Cơ Bản
-  *head = đầu,
-  *tail = đuôi,
-  *next = kế tiếp,
-  *node = nút,
-  *value = giá trị
+
+*head = đầu,
+*tail = đuôi,
+*next = kế tiếp,
+*node = nút,
+\*value = giá trị
 
 ### Chèn (Insert)
 
@@ -71,6 +71,7 @@ end ChènVàoĐầu
 ```
 
 ### Tìm Kiếm (Search)
+
 ```
 Chứa(đầu, giá trị)
   Trước: đầu là nút đầu trong danh sách
@@ -88,6 +89,7 @@ end Contains
 ```
 
 ### Xóa (Delete)
+
 ```
 Xóa(đầu, giá trị)
   Trước: đầu là nút đầu trong danh sách
@@ -123,30 +125,33 @@ end Remove
 ```
 
 ### Duyệt(raverse)
+
 Duyệt(đầu)
-  Trước: đầu là nút đầu trong danh sách
-  Sau: các mục trong danh sách đã được duyệt
-  n ← head
-  while n != ø
-    yield n.value
-    n ← n.next
-  end while
+Trước: đầu là nút đầu trong danh sách
+Sau: các mục trong danh sách đã được duyệt
+n ← head
+while n != ø
+yield n.value
+n ← n.next
+end while
 end Traverse
 
 ### Duyệt Ngược (Traverse in Reverse)
+
 DuyệtNgược(đầu, đuôi)
-  Trước: đầu và đuôi thuộc cùng một danh sách
-  Sau: các mục trong danh sách đã được duyệt theo thứ tự ngược lại
+Trước: đầu và đuôi thuộc cùng một danh sách
+Sau: các mục trong danh sách đã được duyệt theo thứ tự ngược lại
 
 ## Độ Phức Tạp
 
 ### Độ Phức Tạp Thời Gian (Time Complexity)
 
-| Access    | Search    | Insertion | Deletion  |
-| :-------: | :-------: | :-------: | :-------: |
-| O(n)      | O(n)      | O(1)      | O(n)      |
+| Access | Search | Insertion | Deletion |
+| :----: | :----: | :-------: | :------: |
+|  O(n)  |  O(n)  |   O(1)    |   O(n)   |
 
 ## Độ Phức Tạp Không Gian (Space Complexity)
+
 O(n)
 
 ## Tham Khảo

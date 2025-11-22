@@ -16,9 +16,9 @@
 
 ![Граф](./images/graph.jpeg)
 
-*Made with [okso.app](https://okso.app)*
+_Made with [okso.app](https://okso.app)_
 
 ## Посилання
 
-- [Граф у математиці на Wikipedia](https://uk.wikipedia.org/wiki/%D0%93%D1%80%D0%B0%D1%84_(%D0%BC%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0))
+- [Граф у математиці на Wikipedia](<https://uk.wikipedia.org/wiki/%D0%93%D1%80%D0%B0%D1%84_(%D0%BC%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0)>)
 - [Структура даних Graph / Граф](https://www.youtube.com/watch?v=D0U8aFEhgKQ)

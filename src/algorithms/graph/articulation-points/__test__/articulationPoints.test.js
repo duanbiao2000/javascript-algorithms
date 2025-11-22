@@ -16,10 +16,7 @@ describe('articulationPoints', () => {
 
     const graph = new Graph();
 
-    graph
-      .addEdge(edgeAB)
-      .addEdge(edgeBC)
-      .addEdge(edgeCD);
+    graph.addEdge(edgeAB).addEdge(edgeBC).addEdge(edgeCD);
 
     const articulationPointsSet = Object.values(articulationPoints(graph));
 
@@ -41,11 +38,7 @@ describe('articulationPoints', () => {
 
     const graph = new Graph();
 
-    graph
-      .addEdge(edgeAB)
-      .addEdge(edgeAC)
-      .addEdge(edgeBC)
-      .addEdge(edgeCD);
+    graph.addEdge(edgeAB).addEdge(edgeAC).addEdge(edgeBC).addEdge(edgeCD);
 
     const articulationPointsSet = Object.values(articulationPoints(graph));
 

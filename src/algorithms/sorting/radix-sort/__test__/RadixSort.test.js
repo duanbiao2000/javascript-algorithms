@@ -13,7 +13,7 @@ describe('RadixSort', () => {
     SortTester.testAlgorithmTimeComplexity(
       RadixSort,
       ['zzz', 'bb', 'a', 'rr', 'rrb', 'rrba'],
-      ARRAY_OF_STRINGS_VISIT_COUNT,
+      ARRAY_OF_STRINGS_VISIT_COUNT
     );
   });
 
@@ -21,7 +21,7 @@ describe('RadixSort', () => {
     SortTester.testAlgorithmTimeComplexity(
       RadixSort,
       [3, 1, 75, 32, 884, 523, 4343456, 232, 123, 656, 343],
-      ARRAY_OF_INTEGERS_VISIT_COUNT,
+      ARRAY_OF_INTEGERS_VISIT_COUNT
     );
   });
 });

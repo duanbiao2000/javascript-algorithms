@@ -34,7 +34,7 @@ describe('MergeSort', () => {
     SortTester.testAlgorithmTimeComplexity(
       MergeSort,
       equalArr,
-      EQUAL_ARRAY_VISITING_COUNT,
+      EQUAL_ARRAY_VISITING_COUNT
     );
   });
 
@@ -42,7 +42,7 @@ describe('MergeSort', () => {
     SortTester.testAlgorithmTimeComplexity(
       MergeSort,
       sortedArr,
-      SORTED_ARRAY_VISITING_COUNT,
+      SORTED_ARRAY_VISITING_COUNT
     );
   });
 
@@ -50,7 +50,7 @@ describe('MergeSort', () => {
     SortTester.testAlgorithmTimeComplexity(
       MergeSort,
       notSortedArr,
-      NOT_SORTED_ARRAY_VISITING_COUNT,
+      NOT_SORTED_ARRAY_VISITING_COUNT
     );
   });
 
@@ -58,7 +58,7 @@ describe('MergeSort', () => {
     SortTester.testAlgorithmTimeComplexity(
       MergeSort,
       reverseArr,
-      REVERSE_SORTED_ARRAY_VISITING_COUNT,
+      REVERSE_SORTED_ARRAY_VISITING_COUNT
     );
   });
 });

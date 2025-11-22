@@ -18,7 +18,7 @@ describe('hanoiTower', () => {
       toPole,
     });
 
-    expect(moveCallback).toHaveBeenCalledTimes((2 ** numberOfDiscs) - 1);
+    expect(moveCallback).toHaveBeenCalledTimes(2 ** numberOfDiscs - 1);
 
     expect(fromPole.toArray()).toEqual([]);
     expect(toPole.toArray()).toEqual([1, 2]);
@@ -45,7 +45,7 @@ describe('hanoiTower', () => {
       moveCallback,
     });
 
-    expect(moveCallback).toHaveBeenCalledTimes((2 ** numberOfDiscs) - 1);
+    expect(moveCallback).toHaveBeenCalledTimes(2 ** numberOfDiscs - 1);
   });
 
   it('should solve tower of hanoi puzzle with 6 discs', () => {
@@ -57,6 +57,6 @@ describe('hanoiTower', () => {
       moveCallback,
     });
 
-    expect(moveCallback).toHaveBeenCalledTimes((2 ** numberOfDiscs) - 1);
+    expect(moveCallback).toHaveBeenCalledTimes(2 ** numberOfDiscs - 1);
   });
 });

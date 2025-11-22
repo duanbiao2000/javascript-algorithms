@@ -47,7 +47,7 @@ export default class Trie {
       depthFirstDelete(nextNode, charIndex + 1);
 
       // Since we're going to delete a word let's un-mark its last character isCompleteWord flag.
-      if (charIndex === (word.length - 1)) {
+      if (charIndex === word.length - 1) {
         nextNode.isCompleteWord = false;
       }
 

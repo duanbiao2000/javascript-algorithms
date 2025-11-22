@@ -32,7 +32,11 @@ describe('CountingSort', () => {
     // Detect smallest number in array in prior.
     const smallestElement = Math.min(...notSortedArr);
 
-    const sortedArray = sorter.sort(notSortedArr, smallestElement, biggestElement);
+    const sortedArray = sorter.sort(
+      notSortedArr,
+      smallestElement,
+      biggestElement
+    );
 
     expect(sortedArray).toEqual(sortedArr);
     // Normally visitingCallback is being called 60 times but in this case
@@ -44,7 +48,7 @@ describe('CountingSort', () => {
     SortTester.testAlgorithmTimeComplexity(
       CountingSort,
       equalArr,
-      EQUAL_ARRAY_VISITING_COUNT,
+      EQUAL_ARRAY_VISITING_COUNT
     );
   });
 
@@ -52,7 +56,7 @@ describe('CountingSort', () => {
     SortTester.testAlgorithmTimeComplexity(
       CountingSort,
       sortedArr,
-      SORTED_ARRAY_VISITING_COUNT,
+      SORTED_ARRAY_VISITING_COUNT
     );
   });
 
@@ -60,7 +64,7 @@ describe('CountingSort', () => {
     SortTester.testAlgorithmTimeComplexity(
       CountingSort,
       notSortedArr,
-      NOT_SORTED_ARRAY_VISITING_COUNT,
+      NOT_SORTED_ARRAY_VISITING_COUNT
     );
   });
 
@@ -68,7 +72,7 @@ describe('CountingSort', () => {
     SortTester.testAlgorithmTimeComplexity(
       CountingSort,
       reverseArr,
-      REVERSE_SORTED_ARRAY_VISITING_COUNT,
+      REVERSE_SORTED_ARRAY_VISITING_COUNT
     );
   });
 });

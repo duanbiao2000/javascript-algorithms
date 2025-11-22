@@ -12,7 +12,7 @@
 
 ![MinHeap](./images/min-heap.jpeg)
 
-*Made with [okso.app](https://okso.app)*
+_Made with [okso.app](https://okso.app)_
 
 Не існує жодних обмежень щодо того, скільки вузлів-нащадків має кожен вузол купи. На практиці їх
 число зазвичай трохи більше двох. Купа є максимально ефективною реалізацією абстрактного типу даних, який
@@ -22,4 +22,4 @@
 
 ## Посилання
 
-- [Wikipedia](https://uk.wikipedia.org/wiki/%D0%9A%D1%83%D0%BF%D0%B0_(%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%B0_%D0%B4%D0%B0%D0%BD%D0%B8%D1%85))
+- [Wikipedia](<https://uk.wikipedia.org/wiki/%D0%9A%D1%83%D0%BF%D0%B0_(%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%B0_%D0%B4%D0%B0%D0%BD%D0%B8%D1%85)>)

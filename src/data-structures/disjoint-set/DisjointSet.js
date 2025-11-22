@@ -31,7 +31,10 @@ export default class DisjointSet {
    * @return {(string|null)}
    */
   find(itemValue) {
-    const templateDisjointItem = new DisjointSetItem(itemValue, this.keyCallback);
+    const templateDisjointItem = new DisjointSetItem(
+      itemValue,
+      this.keyCallback
+    );
 
     // Try to find item itself;
     const requiredDisjointItem = this.items[templateDisjointItem.getKey()];

@@ -12,7 +12,7 @@
 
 ![MinHeap](./images/min-heap.jpeg)
 
-*Made with [okso.app](https://okso.app)*
+_Made with [okso.app](https://okso.app)_
 
 Не существует никаких ограничений относительно того, сколько узлов-потомков имеет каждый узел кучи. На практике их
 число обычно не более двух. Куча является максимально эффективной реализацией абстрактного типа данных, который
@@ -22,5 +22,5 @@
 
 ## Ссылки
 
-- [Wikipedia](https://ru.wikipedia.org/wiki/Куча_(структура_данных))
+- [Wikipedia](<https://ru.wikipedia.org/wiki/Куча_(структура_данных)>)
 - [YouTube](https://www.youtube.com/watch?v=noQ4SUoqrQA)

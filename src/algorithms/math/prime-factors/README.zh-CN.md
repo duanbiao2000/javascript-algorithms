@@ -11,7 +11,6 @@ _Read this in other languages:_
 
 _Image source: [Math is Fun](https://www.mathsisfun.com/prime-factorization.html)_
 
-
 **质数因子**是那些相乘得到原始数的[质数](https://en.wikipedia.org/wiki/Prime_number)。例如`39`的质数因子是`3`和`13`，`15`的质数因子是`3`和`5`。
 
 ![Factors](https://www.mathsisfun.com/numbers/images/factor-2x3.svg)

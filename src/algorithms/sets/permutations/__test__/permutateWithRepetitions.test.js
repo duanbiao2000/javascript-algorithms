@@ -3,9 +3,7 @@ import permutateWithRepetitions from '../permutateWithRepetitions';
 describe('permutateWithRepetitions', () => {
   it('should permutate string with repetition', () => {
     const permutations1 = permutateWithRepetitions(['A']);
-    expect(permutations1).toEqual([
-      ['A'],
-    ]);
+    expect(permutations1).toEqual([['A']]);
 
     const permutations2 = permutateWithRepetitions(['A', 'B']);
     expect(permutations2).toEqual([

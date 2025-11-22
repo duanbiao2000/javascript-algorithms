@@ -9,7 +9,11 @@ describe('knuthMorrisPratt', () => {
     expect(knuthMorrisPratt('abcbcglx', 'bcgl')).toBe(3);
     expect(knuthMorrisPratt('abcxabcdabxabcdabcdabcy', 'abcdabcy')).toBe(15);
     expect(knuthMorrisPratt('abcxabcdabxabcdabcdabcy', 'abcdabca')).toBe(-1);
-    expect(knuthMorrisPratt('abcxabcdabxaabcdabcabcdabcdabcy', 'abcdabca')).toBe(12);
-    expect(knuthMorrisPratt('abcxabcdabxaabaabaaaabcdabcdabcy', 'aabaabaaa')).toBe(11);
+    expect(
+      knuthMorrisPratt('abcxabcdabxaabcdabcabcdabcdabcy', 'abcdabca')
+    ).toBe(12);
+    expect(
+      knuthMorrisPratt('abcxabcdabxaabaabaaaabcdabcdabcy', 'aabaabaaa')
+    ).toBe(11);
   });
 });

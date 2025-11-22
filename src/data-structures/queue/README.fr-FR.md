@@ -22,9 +22,9 @@ Représentation d'une file PEPS (premier entré, premier sorti)
 
 ![Queue](./images/queue.jpeg)
 
-*Made with [okso.app](https://okso.app)*
+_Made with [okso.app](https://okso.app)_
 
 ## Références
 
-- [Wikipedia](https://fr.wikipedia.org/wiki/File_(structure_de_donn%C3%A9es))
+- [Wikipedia](<https://fr.wikipedia.org/wiki/File_(structure_de_donn%C3%A9es)>)
 - [YouTube](https://www.youtube.com/watch?v=wjI1WNcIntg&list=PLLXdhg_r2hKA7DPDsunoDZ-Z769jWn4R8&index=3&)

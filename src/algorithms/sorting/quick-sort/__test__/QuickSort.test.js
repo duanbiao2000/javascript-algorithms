@@ -34,7 +34,7 @@ describe('QuickSort', () => {
     SortTester.testAlgorithmTimeComplexity(
       QuickSort,
       equalArr,
-      EQUAL_ARRAY_VISITING_COUNT,
+      EQUAL_ARRAY_VISITING_COUNT
     );
   });
 
@@ -42,7 +42,7 @@ describe('QuickSort', () => {
     SortTester.testAlgorithmTimeComplexity(
       QuickSort,
       sortedArr,
-      SORTED_ARRAY_VISITING_COUNT,
+      SORTED_ARRAY_VISITING_COUNT
     );
   });
 
@@ -50,7 +50,7 @@ describe('QuickSort', () => {
     SortTester.testAlgorithmTimeComplexity(
       QuickSort,
       notSortedArr,
-      NOT_SORTED_ARRAY_VISITING_COUNT,
+      NOT_SORTED_ARRAY_VISITING_COUNT
     );
   });
 
@@ -58,7 +58,7 @@ describe('QuickSort', () => {
     SortTester.testAlgorithmTimeComplexity(
       QuickSort,
       reverseArr,
-      REVERSE_SORTED_ARRAY_VISITING_COUNT,
+      REVERSE_SORTED_ARRAY_VISITING_COUNT
     );
   });
 });

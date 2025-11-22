@@ -10,9 +10,9 @@ dígitos que compartilham a mesma posição e valor significativos. Uma notaçã
 (por exemplo, nomes ou datas) e números de ponto flutuante especialmente formatados, base
 sort não está limitado a inteiros.
 
-*De onde vem o nome?*
+_De onde vem o nome?_
 
-Em sistemas numéricos matemáticos, a *radix* ou base é o número de dígitos únicos,
+Em sistemas numéricos matemáticos, a _radix_ ou base é o número de dígitos únicos,
 incluindo o dígito zero, usado para representar números em um sistema de numeração posicional.
 Por exemplo, um sistema binário (usando números 0 e 1) tem uma raiz de 2 e um decimal
 sistema (usando números de 0 a 9) tem uma raiz de 10.
@@ -37,9 +37,9 @@ ordenações baseadas em comparação (e pior se as chaves forem muito mais long
 
 ## Complexidade
 
-| Nome                  | Melhor            | Média             | Pior               | Memória    | Estável    | Comentários  |
-| --------------------- | :-------------: | :-----------------: | :-----------------: | :-------: | :-------: | :-------- |
-| **Radix sort**        | n * k           | n * k               | n * k               | n + k     | Sim       | k - comprimento da chave mais longa |
+| Nome           | Melhor | Média  |  Pior  | Memória | Estável | Comentários                         |
+| -------------- | :----: | :----: | :----: | :-----: | :-----: | :---------------------------------- |
+| **Radix sort** | n \* k | n \* k | n \* k |  n + k  |   Sim   | k - comprimento da chave mais longa |
 
 ## Referências
 

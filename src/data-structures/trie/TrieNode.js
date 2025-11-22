@@ -47,11 +47,7 @@ export default class TrieNode {
     // Delete childNode only if:
     // - childNode has NO children,
     // - childNode.isCompleteWord === false.
-    if (
-      childNode
-      && !childNode.isCompleteWord
-      && !childNode.hasChildren()
-    ) {
+    if (childNode && !childNode.isCompleteWord && !childNode.hasChildren()) {
       this.children.delete(character);
     }
 

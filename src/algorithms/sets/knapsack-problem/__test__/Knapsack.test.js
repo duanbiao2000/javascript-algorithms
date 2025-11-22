@@ -150,8 +150,8 @@ describe('Knapsack', () => {
 
     knapsack.solveUnboundedKnapsackProblem();
 
-    expect(knapsack.totalValue).toBe((3 * 84) + (2 * 5) + (1 * 12) + (6 * 10) + (8 * 20));
-    expect(knapsack.totalWeight).toBe((3 * 7) + (2 * 2) + (1 * 3) + (6 * 1) + (8 * 2));
+    expect(knapsack.totalValue).toBe(3 * 84 + 2 * 5 + 1 * 12 + 6 * 10 + 8 * 20);
+    expect(knapsack.totalWeight).toBe(3 * 7 + 2 * 2 + 1 * 3 + 6 * 1 + 8 * 2);
     expect(knapsack.selectedItems.length).toBe(5);
     expect(knapsack.selectedItems[0].toString()).toBe('v84 w7 x 3');
     expect(knapsack.selectedItems[1].toString()).toBe('v20 w2 x 8');

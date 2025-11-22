@@ -28,7 +28,7 @@ As folhas não foram desenhadas.
 
 ![Trie](./images/binary-search-tree.jpg)
 
-*Made with [okso.app](https://okso.app)*
+_Made with [okso.app](https://okso.app)_
 
 ## Pseudocódigo para Operações Básicas
 
@@ -84,7 +84,6 @@ contains(root, value)
   end if
 end contains
 ```
-
 
 ### Remoção
 
@@ -263,7 +262,7 @@ end postorder
 
 ### Complexidade de Tempo
 
-| Access    | Search    | Insertion | Deletion  |
+|  Access   |  Search   | Insertion | Deletion  |
 | :-------: | :-------: | :-------: | :-------: |
 | O(log(n)) | O(log(n)) | O(log(n)) | O(log(n)) |
 

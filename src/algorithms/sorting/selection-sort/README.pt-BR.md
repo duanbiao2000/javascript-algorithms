@@ -11,9 +11,9 @@ Selection Sort é um algoritmo de ordenação, mais especificamente um algoritmo
 
 ## Complexidade
 
-| Nome                  | Melhor          | Médio               | Pior                | Memória   | Estável    | Comentários  |
-| --------------------- | :-------------: | :-----------------: | :-----------------: | :-------: | :-------:  | :----------: |
-| **Selection sort**    | n<sup>2</sup>   | n<sup>2</sup>       | n<sup>2</sup>       | 1         | Não        |              |
+| Nome               |    Melhor     |     Médio     |     Pior      | Memória | Estável | Comentários |
+| ------------------ | :-----------: | :-----------: | :-----------: | :-----: | :-----: | :---------: |
+| **Selection sort** | n<sup>2</sup> | n<sup>2</sup> | n<sup>2</sup> |    1    |   Não   |             |
 
 ## Referências
 

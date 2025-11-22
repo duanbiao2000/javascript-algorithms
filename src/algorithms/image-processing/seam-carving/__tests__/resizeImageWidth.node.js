@@ -3,8 +3,10 @@ import { PNG } from 'pngjs';
 
 import resizeImageWidth from '../resizeImageWidth';
 
-const testImageBeforePath = './src/algorithms/image-processing/seam-carving/__tests__/test-image-before.png';
-const testImageAfterPath = './src/algorithms/image-processing/seam-carving/__tests__/test-image-after.png';
+const testImageBeforePath =
+  './src/algorithms/image-processing/seam-carving/__tests__/test-image-before.png';
+const testImageAfterPath =
+  './src/algorithms/image-processing/seam-carving/__tests__/test-image-after.png';
 
 /**
  * Compares two images and finds the number of different pixels.
@@ -22,10 +24,20 @@ function pixelsDiff(imgA, imgB, threshold = 0) {
   let differentPixels = 0;
   const numColorParams = 4; // RGBA
 
-  for (let pixelIndex = 0; pixelIndex < imgA.data.length; pixelIndex += numColorParams) {
+  for (
+    let pixelIndex = 0;
+    pixelIndex < imgA.data.length;
+    pixelIndex += numColorParams
+  ) {
     // Get pixel's color for each image.
-    const [aR, aG, aB] = imgA.data.subarray(pixelIndex, pixelIndex + numColorParams);
-    const [bR, bG, bB] = imgB.data.subarray(pixelIndex, pixelIndex + numColorParams);
+    const [aR, aG, aB] = imgA.data.subarray(
+      pixelIndex,
+      pixelIndex + numColorParams
+    );
+    const [bR, bG, bB] = imgB.data.subarray(
+      pixelIndex,
+      pixelIndex + numColorParams
+    );
 
     // Get average pixel's color for each image (make them greyscale).
     const aAvgColor = Math.floor((aR + aG + aB) / 3);
@@ -40,20 +52,21 @@ function pixelsDiff(imgA, imgB, threshold = 0) {
   return differentPixels;
 }
 
-const pngLoad = (path) => new Promise((resolve) => {
-  fs.createReadStream(path)
-    .pipe(new PNG())
-    .on('parsed', function Parsed() {
-      /** @type {ImageData} */
-      const imageData = {
-        colorSpace: 'srgb',
-        width: this.width,
-        height: this.height,
-        data: this.data,
-      };
-      resolve(imageData);
-    });
-});
+const pngLoad = (path) =>
+  new Promise((resolve) => {
+    fs.createReadStream(path)
+      .pipe(new PNG())
+      .on('parsed', function Parsed() {
+        /** @type {ImageData} */
+        const imageData = {
+          colorSpace: 'srgb',
+          width: this.width,
+          height: this.height,
+          data: this.data,
+        };
+        resolve(imageData);
+      });
+  });
 
 describe('resizeImageWidth', () => {
   it('should perform content-aware image width reduction', async () => {
@@ -62,10 +75,10 @@ describe('resizeImageWidth', () => {
 
     const toWidth = Math.floor(imgBefore.width / 2);
 
-    const {
-      img: imgResized,
-      size: resizedSize,
-    } = resizeImageWidth({ img: imgBefore, toWidth });
+    const { img: imgResized, size: resizedSize } = resizeImageWidth({
+      img: imgBefore,
+      toWidth,
+    });
 
     expect(imgResized).toBeDefined();
     expect(resizedSize).toBeDefined();

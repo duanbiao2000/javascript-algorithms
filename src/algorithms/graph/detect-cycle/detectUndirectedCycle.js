@@ -24,7 +24,9 @@ export default function detectUndirectedCycle(graph) {
 
       // Don't allow traversal from child back to its parent.
       const currentVertexParent = parents[currentVertex.getKey()];
-      const currentVertexParentKey = currentVertexParent ? currentVertexParent.getKey() : null;
+      const currentVertexParentKey = currentVertexParent
+        ? currentVertexParent.getKey()
+        : null;
 
       return currentVertexParentKey !== nextVertex.getKey();
     },

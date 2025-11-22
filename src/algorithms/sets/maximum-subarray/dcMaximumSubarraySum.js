@@ -26,7 +26,7 @@ export default function dcMaximumSubarraySum(inputArray) {
       // Option #1: Pick the current element, and continue picking next one.
       inputArray[elementIndex] + solveRecursively(elementIndex + 1, true),
       // Option #2: Don't pick the current element.
-      mustPick ? 0 : solveRecursively(elementIndex + 1, false),
+      mustPick ? 0 : solveRecursively(elementIndex + 1, false)
     );
   }
   return solveRecursively(0, false);

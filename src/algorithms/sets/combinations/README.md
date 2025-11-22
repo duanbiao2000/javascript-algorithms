@@ -56,11 +56,11 @@ order doesn't matter.
 
 ![Combinations overview](./images/combinations-overview.jpg)
 
-| | |
-| --- | --- |
-|![Combinations with repetition](./images/combinations-with-repetitions.jpg) | ![Combinations without repetition](./images/combinations-without-repetitions.jpg) |
+|                                                                             |                                                                                   |
+| --------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| ![Combinations with repetition](./images/combinations-with-repetitions.jpg) | ![Combinations without repetition](./images/combinations-without-repetitions.jpg) |
 
-*Made with [okso.app](https://okso.app)*
+_Made with [okso.app](https://okso.app)_
 
 ## References
 

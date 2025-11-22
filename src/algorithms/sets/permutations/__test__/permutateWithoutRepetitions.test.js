@@ -4,9 +4,7 @@ import factorial from '../../../math/factorial/factorial';
 describe('permutateWithoutRepetitions', () => {
   it('should permutate string', () => {
     const permutations1 = permutateWithoutRepetitions(['A']);
-    expect(permutations1).toEqual([
-      ['A'],
-    ]);
+    expect(permutations1).toEqual([['A']]);
 
     const permutations2 = permutateWithoutRepetitions(['A', 'B']);
     expect(permutations2.length).toBe(2);
@@ -62,7 +60,14 @@ describe('permutateWithoutRepetitions', () => {
       ['D', 'C', 'B', 'A'],
     ]);
 
-    const permutations5 = permutateWithoutRepetitions(['A', 'B', 'C', 'D', 'E', 'F']);
+    const permutations5 = permutateWithoutRepetitions([
+      'A',
+      'B',
+      'C',
+      'D',
+      'E',
+      'F',
+    ]);
     expect(permutations5.length).toBe(factorial(6));
   });
 });

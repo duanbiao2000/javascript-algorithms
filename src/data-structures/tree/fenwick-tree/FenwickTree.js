@@ -24,7 +24,7 @@ export default class FenwickTree {
       throw new Error('Position is out of allowed range');
     }
 
-    for (let i = position; i <= this.arraySize; i += (i & -i)) {
+    for (let i = position; i <= this.arraySize; i += i & -i) {
       this.treeArray[i] += value;
     }
 
@@ -44,7 +44,7 @@ export default class FenwickTree {
 
     let sum = 0;
 
-    for (let i = position; i > 0; i -= (i & -i)) {
+    for (let i = position; i > 0; i -= i & -i) {
       sum += this.treeArray[i];
     }
 

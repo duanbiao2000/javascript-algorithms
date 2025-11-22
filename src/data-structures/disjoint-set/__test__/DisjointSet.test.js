@@ -65,11 +65,7 @@ describe('DisjointSet', () => {
       .makeSet('H')
       .makeSet('I');
 
-    disjointSet
-      .union('E', 'F')
-      .union('F', 'G')
-      .union('G', 'H')
-      .union('H', 'I');
+    disjointSet.union('E', 'F').union('F', 'G').union('G', 'H').union('H', 'I');
 
     expect(disjointSet.inSameSet('A', 'I')).toBe(false);
     expect(disjointSet.inSameSet('E', 'I')).toBe(true);

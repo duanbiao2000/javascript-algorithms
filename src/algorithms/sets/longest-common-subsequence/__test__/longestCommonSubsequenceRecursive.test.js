@@ -9,9 +9,11 @@ describe('longestCommonSubsequenceRecursive', () => {
     expect(longestCommonSubsequence('BABCA', 'ABCBA')).toBe('ABCA');
     expect(longestCommonSubsequence('sea', 'eat')).toBe('ea');
     expect(longestCommonSubsequence('algorithms', 'rithm')).toBe('rithm');
-    expect(longestCommonSubsequence(
-      'Algorithms and data structures implemented in JavaScript',
-      'Here you may find Algorithms and data structures that are implemented in JavaScript',
-    )).toBe('Algorithms and data structures implemented in JavaScript');
+    expect(
+      longestCommonSubsequence(
+        'Algorithms and data structures implemented in JavaScript',
+        'Here you may find Algorithms and data structures that are implemented in JavaScript'
+      )
+    ).toBe('Algorithms and data structures implemented in JavaScript');
   });
 });

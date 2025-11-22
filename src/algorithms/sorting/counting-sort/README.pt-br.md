@@ -54,14 +54,14 @@ posição usando a ajuda do vetor de contagem construída `C`, ou seja, o que
 construímos no passo dois. Usamos o vetor de resultados `B` para armazenar
 os elementos ordenados. Aqui nós lidamos com o índice de `B` começando de
 zero.
- 
+
 ![Counting Sort](https://1.bp.blogspot.com/-xPqylngqASY/WLGq3p9n9vI/AAAAAAAAAHM/JHdtXAkJY8wYzDMBXxqarjmhpPhM0u8MACLcB/s1600/ResultArrayCS.gif)
 
 ## Complexidade
 
-| Nome                  | Melhor            | Média             | Pior               | Memória    | Estável    | Comentários  |
-| --------------------- | :-------------: | :-----------------: | :-----------------: | :-------: | :-------: | :-------- |
-| **Counting sort**     | n + r           | n + r               | n + r               | n + r     | Sim       | r - Maior número no vetor |
+| Nome              | Melhor | Média | Pior  | Memória | Estável | Comentários               |
+| ----------------- | :----: | :---: | :---: | :-----: | :-----: | :------------------------ |
+| **Counting sort** | n + r  | n + r | n + r |  n + r  |   Sim   | r - Maior número no vetor |
 
 ## Referências
 

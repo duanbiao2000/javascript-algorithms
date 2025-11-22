@@ -2,11 +2,7 @@ import BloomFilter from '../BloomFilter';
 
 describe('BloomFilter', () => {
   let bloomFilter;
-  const people = [
-    'Bruce Wayne',
-    'Clark Kent',
-    'Barry Allen',
-  ];
+  const people = ['Bruce Wayne', 'Clark Kent', 'Barry Allen'];
 
   beforeEach(() => {
     bloomFilter = new BloomFilter();

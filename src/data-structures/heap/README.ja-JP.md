@@ -6,7 +6,7 @@
 
 ![MinHeap](./images/min-heap.jpeg)
 
-*Made with [okso.app](https://okso.app)*
+_Made with [okso.app](https://okso.app)_
 
 *最大ヒープ*では、`P`のキーは`C`のキーより大きい、もしくは等しくなります。
 
@@ -18,5 +18,5 @@
 
 ## 参考
 
-- [Wikipedia](https://en.wikipedia.org/wiki/Heap_(data_structure))
+- [Wikipedia](<https://en.wikipedia.org/wiki/Heap_(data_structure)>)
 - [YouTube](https://www.youtube.com/watch?v=t0Cq6tVNRBA&index=5&t=0s&list=PLLXdhg_r2hKA7DPDsunoDZ-Z769jWn4R8)

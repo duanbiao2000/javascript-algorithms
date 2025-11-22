@@ -13,13 +13,13 @@ _Read this in other languages:_
 
 ![Hash Table](./images/hash-table.jpeg)
 
-*Made with [okso.app](https://okso.app)*
+_Made with [okso.app](https://okso.app)_
 
 다음은 분리 연결법을 통해 해시 충돌을 해결한 예시입니다.
 
 ![Hash Collision](./images/collision-resolution.jpeg)
 
-*Made with [okso.app](https://okso.app)*
+_Made with [okso.app](https://okso.app)_
 
 ## 참고
 

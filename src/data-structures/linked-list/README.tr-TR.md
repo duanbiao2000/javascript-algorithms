@@ -21,7 +21,7 @@ mümkün değildir. Diziler, bağlantılı listelere kıyasla daha iyi önbellek
 
 ![Linked List](./images/linked-list.jpeg)
 
-*Made with [okso.app](https://okso.app)*
+_Made with [okso.app](https://okso.app)_
 
 ## Temel İşlemler için Sözde Kod
 
@@ -147,9 +147,9 @@ end ReverseTraversal
 
 ### Zaman Karmaşıklığı
 
-| Erişim    | Arama     | Ekleme    | Silme     |
-| :-------: | :-------: | :-------: | :-------: |
-| O(n)      | O(n)      | O(1)      | O(n)      |
+| Erişim | Arama | Ekleme | Silme |
+| :----: | :---: | :----: | :---: |
+|  O(n)  | O(n)  |  O(1)  | O(n)  |
 
 ### Uzay Karmaşıklığı
 

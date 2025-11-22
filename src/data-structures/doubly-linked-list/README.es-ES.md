@@ -11,7 +11,7 @@ En informática, una **lista doblemente enlazada** es una estructura de datos re
 
 ![Lista doblemente enlazada](./images/doubly-linked-list.jpeg)
 
-*Made with [okso.app](https://okso.app)*
+_Made with [okso.app](https://okso.app)_
 
 Los dos enlaces de un nodo permiten recorrer la lista en cualquier dirección. Si bien agregar o eliminar un nodo en una lista doblemente enlazada requiere cambiar más enlaces que las mismas operaciones en una lista enlazada individualmente, las operaciones son más simples y potencialmente más eficientes (para nodos que no sean los primeros) porque no hay necesidad de realizar un seguimiento del nodo anterior durante el recorrido o no es necesario recorrer la lista para encontrar el nodo anterior, de modo que se pueda modificar su enlace.
 

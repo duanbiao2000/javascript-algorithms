@@ -30,7 +30,7 @@ describe('SelectionSort', () => {
     SortTester.testAlgorithmTimeComplexity(
       SelectionSort,
       equalArr,
-      EQUAL_ARRAY_VISITING_COUNT,
+      EQUAL_ARRAY_VISITING_COUNT
     );
   });
 
@@ -38,7 +38,7 @@ describe('SelectionSort', () => {
     SortTester.testAlgorithmTimeComplexity(
       SelectionSort,
       sortedArr,
-      SORTED_ARRAY_VISITING_COUNT,
+      SORTED_ARRAY_VISITING_COUNT
     );
   });
 
@@ -46,7 +46,7 @@ describe('SelectionSort', () => {
     SortTester.testAlgorithmTimeComplexity(
       SelectionSort,
       notSortedArr,
-      NOT_SORTED_ARRAY_VISITING_COUNT,
+      NOT_SORTED_ARRAY_VISITING_COUNT
     );
   });
 
@@ -54,7 +54,7 @@ describe('SelectionSort', () => {
     SortTester.testAlgorithmTimeComplexity(
       SelectionSort,
       reverseArr,
-      REVERSE_SORTED_ARRAY_VISITING_COUNT,
+      REVERSE_SORTED_ARRAY_VISITING_COUNT
     );
   });
 });

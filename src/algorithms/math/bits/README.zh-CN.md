@@ -118,7 +118,6 @@ a * b 可以被改写成如下形式:
 
 这样转换的优势在于，递归的每一步，递归的操作数的值都减少了一半。因此，运行时的时间复杂度为`O(log(b))`,其中b是在每个递归步骤上减少为一半的操作数。
 
-
 > 查看[multiply.js](multiply.js)了解更多细节。
 
 #### Multiply Two Unsigned Numbers
@@ -155,7 +154,6 @@ Count of set bits = 2
 > 查看[countSetBits.js](countSetBits.js)了解更多细节。
 
 #### Count Bits to Flip One Number to Another
-
 
 该方法输出把一个数字转换为另一个数字所需要转换的位数。这利用了以下特性：当数字进行`XOR`异或运算时，结果将是不同位数的数量(即异或的结果中所有被设置为1的位的数量)。
 

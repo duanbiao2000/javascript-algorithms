@@ -122,7 +122,6 @@ Stuart Riffle a une excellente interprétation de la transformée de Fourier:
 ## Références
 
 - Wikipedia
-
   - [TF](https://fr.wikipedia.org/wiki/Transformation_de_Fourier)
   - [TFD](https://fr.wikipedia.org/wiki/Transformation_de_Fourier_discr%C3%A8te)
   - [FFT](https://fr.wikipedia.org/wiki/Transformation_de_Fourier_rapide)

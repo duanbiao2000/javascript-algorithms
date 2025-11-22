@@ -43,11 +43,11 @@ n * n * n ... (r times) = n^r
 
 ![Permutations overview](./images/permutations-overview.jpeg)
 
-| | |
-| --- | --- |
-|![Permutations with repetition](./images/permutations-with-repetitions.jpg) | ![Permutations without repetition](./images/permutations-without-repetitions.jpg) |
+|                                                                             |                                                                                   |
+| --------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| ![Permutations with repetition](./images/permutations-with-repetitions.jpg) | ![Permutations without repetition](./images/permutations-without-repetitions.jpg) |
 
-*Made with [okso.app](https://okso.app)*
+_Made with [okso.app](https://okso.app)_
 
 ## References
 

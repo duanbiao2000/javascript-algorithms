@@ -4,13 +4,11 @@
 
 ![Doubly Linked List](./images/doubly-linked-list.jpeg)
 
-*Made with [okso.app](https://okso.app)*
+_Made with [okso.app](https://okso.app)_
 
 两个节点链接允许在任一方向上遍历列表。
 
 在双向链表中进行添加或者删除节点时,需做的链接更改要比单向链表复杂得多。这种操作在单向链表中更简单高效,因为不需要关注一个节点（除第一个和最后一个节点以外的节点）的两个链接,而只需要关注一个链接即可。
-
-
 
 ## 基础操作的伪代码
 
@@ -87,9 +85,9 @@ end Reverse Traversal
 
 ## 时间复杂度
 
-| Access    | Search    | Insertion | Deletion  |
-| :-------: | :-------: | :-------: | :-------: |
-| O(n)      | O(n)      | O(1)      | O(1)      |
+| Access | Search | Insertion | Deletion |
+| :----: | :----: | :-------: | :------: |
+|  O(n)  |  O(n)  |   O(1)    |   O(1)   |
 
 ### 空间复杂度
 

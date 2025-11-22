@@ -13,7 +13,7 @@ e formadas a partir dos mesmos itens, mas em ordem sequencial opostas.
 
 ![Doubly Linked List](./images/doubly-linked-list.jpeg)
 
-*Made with [okso.app](https://okso.app)*
+_Made with [okso.app](https://okso.app)_
 
 Os dois nós ligados permitem a travessia da lista em qualquer direção.
 Enquanto adicionar ou remover um nó de uma lista duplamente vinculada requer
@@ -99,9 +99,9 @@ end Reverse Traversal
 
 ## Complexidade de Tempo
 
-| Acesso    | Pesquisa    | Inserção | Remoção  |
-| :-------: | :---------: | :------: | :------: |
-| O(n)      | O(n)        | O(1)     | O(n)     |
+| Acesso | Pesquisa | Inserção | Remoção |
+| :----: | :------: | :------: | :-----: |
+|  O(n)  |   O(n)   |   O(1)   |  O(n)   |
 
 ### Complexidade de Espaço
 

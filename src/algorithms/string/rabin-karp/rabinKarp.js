@@ -15,7 +15,11 @@ export default function rabinKarp(text, word) {
   let currentFrameHash = null;
 
   // Go through all substring of the text that may match.
-  for (let charIndex = 0; charIndex <= (text.length - word.length); charIndex += 1) {
+  for (
+    let charIndex = 0;
+    charIndex <= text.length - word.length;
+    charIndex += 1
+  ) {
     const currentFrame = text.substring(charIndex, charIndex + word.length);
 
     // Calculate the hash of current substring.
@@ -31,8 +35,8 @@ export default function rabinKarp(text, word) {
     // In case if hashes match let's make sure that substrings are equal.
     // In case of hash collision the strings may not be equal.
     if (
-      wordHash === currentFrameHash
-      && text.substr(charIndex, word.length) === word
+      wordHash === currentFrameHash &&
+      text.substr(charIndex, word.length) === word
     ) {
       return charIndex;
     }

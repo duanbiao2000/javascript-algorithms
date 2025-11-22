@@ -28,11 +28,7 @@ export const shape = (m) => {
  * @throws {Error}
  */
 const validateType = (m) => {
-  if (
-    !m
-    || !Array.isArray(m)
-    || !Array.isArray(m[0])
-  ) {
+  if (!m || !Array.isArray(m) || !Array.isArray(m[0])) {
     throw new Error('Invalid matrix format');
   }
 };

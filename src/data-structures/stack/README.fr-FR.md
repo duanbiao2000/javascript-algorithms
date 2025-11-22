@@ -3,9 +3,9 @@
 En informatique, une **pile** est un type de données abstrait
 qui sert de collection d'éléments, avec deux opérations principales:
 
-* **empiler** (en anglais *push*), qui ajoute un élément à la collection, et
-* **dépiler** (en anglais *pop*), qui supprime l'élément le plus récemment
-ajouté qui n'a pas encore été supprimé.
+- **empiler** (en anglais _push_), qui ajoute un élément à la collection, et
+- **dépiler** (en anglais _pop_), qui supprime l'élément le plus récemment
+  ajouté qui n'a pas encore été supprimé.
 
 L'ordre dans lequel les éléments sortent d'une pile donne
 lieu à son nom alternatif, LIFO ("last in, first out",
@@ -22,9 +22,9 @@ Représentation simple de l'éxecution d'une pile avec des opérations empiler (
 
 ![Stack](./images/stack.jpeg)
 
-*Made with [okso.app](https://okso.app)*
+_Made with [okso.app](https://okso.app)_
 
 ## Références
 
-- [Wikipedia](https://fr.wikipedia.org/wiki/Pile_(informatique))
+- [Wikipedia](<https://fr.wikipedia.org/wiki/Pile_(informatique)>)
 - [YouTube](https://www.youtube.com/watch?v=wjI1WNcIntg&list=PLLXdhg_r2hKA7DPDsunoDZ-Z769jWn4R8&index=3&)

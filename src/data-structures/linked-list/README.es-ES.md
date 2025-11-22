@@ -7,9 +7,9 @@ _Lee este artículo en otros idiomas:_
 [_Português_](README.pt-BR.md)
 [_English_](README.md)
 
-En ciencias de la computación una **lista enlazada** es una  colección lineal 
+En ciencias de la computación una **lista enlazada** es una colección lineal
 de elementos, en los cuales el orden lineal no es dado por
-su posición física en memoria. En cambio, cada 
+su posición física en memoria. En cambio, cada
 elemento señala al siguiente. Es una estructura de datos
 que consiste en un grupo de nodos los cuales juntos representan
 una secuencia. En su forma más sencilla, cada nodo está
@@ -26,7 +26,7 @@ tienen una mejor localización en caché comparados con las listas enlazadas.
 
 ![Linked List](./images/linked-list.jpeg)
 
-*Made with [okso.app](https://okso.app)*
+_Made with [okso.app](https://okso.app)_
 
 ## Pseudocódigo para operaciones básicas
 

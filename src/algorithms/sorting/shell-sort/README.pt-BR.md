@@ -31,6 +31,7 @@ parece com isso
 ![Shellsort](https://www.tutorialspoint.com/data_structures_algorithms/images/shell_sort_step_1.jpg)
 
 Então, pegamos o intervalo de 2 e essa lacuna gera duas sub-listas
+
 - `{14, 27, 35, 42}`, `{19, 10, 33, 44}`
 
 ![Shellsort](https://www.tutorialspoint.com/data_structures_algorithms/images/shell_sort_gap_2.jpg)
@@ -49,9 +50,9 @@ A classificação de shell usa a classificação por inserção para classificar
 
 ## Complexidade
 
-| Nome                  | Melhor            | Média             | Pior               | Memória    | Estável    | Comentários  |
-| --------------------- | :-------------: | :-----------------: | :-----------------: | :-------: | :-------: | :-------- |
-| **Shell sort**        | n&nbsp;log(n)   | depends on gap sequence   | n&nbsp;(log(n))<sup>2</sup>  | 1         | Não         |           |
+| Nome           |    Melhor     |          Média          |            Pior             | Memória | Estável | Comentários |
+| -------------- | :-----------: | :---------------------: | :-------------------------: | :-----: | :-----: | :---------- |
+| **Shell sort** | n&nbsp;log(n) | depends on gap sequence | n&nbsp;(log(n))<sup>2</sup> |    1    |   Não   |             |
 
 ## Referências
 

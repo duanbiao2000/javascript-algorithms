@@ -14,9 +14,7 @@ describe('BinaryTreeNode', () => {
     const rightNode = new BinaryTreeNode(3);
     const rootNode = new BinaryTreeNode(2);
 
-    rootNode
-      .setLeft(leftNode)
-      .setRight(rightNode);
+    rootNode.setLeft(leftNode).setRight(rightNode);
 
     expect(rootNode.value).toBe(2);
     expect(rootNode.left.value).toBe(1);
@@ -28,9 +26,7 @@ describe('BinaryTreeNode', () => {
     const rightNode = new BinaryTreeNode(3);
     const rootNode = new BinaryTreeNode(2);
 
-    rootNode
-      .setLeft(leftNode)
-      .setRight(rightNode);
+    rootNode.setLeft(leftNode).setRight(rightNode);
 
     expect(rootNode.parent).toBeNull();
     expect(rootNode.left.parent.value).toBe(2);
@@ -43,9 +39,7 @@ describe('BinaryTreeNode', () => {
     const rightNode = new BinaryTreeNode(3);
     const rootNode = new BinaryTreeNode(2);
 
-    rootNode
-      .setLeft(leftNode)
-      .setRight(rightNode);
+    rootNode.setLeft(leftNode).setRight(rightNode);
 
     expect(rootNode.traverseInOrder()).toEqual([1, 2, 3]);
 
@@ -57,9 +51,7 @@ describe('BinaryTreeNode', () => {
     const rightNode = new BinaryTreeNode(3);
     const rootNode = new BinaryTreeNode(2);
 
-    rootNode
-      .setLeft(leftNode)
-      .setRight(rightNode);
+    rootNode.setLeft(leftNode).setRight(rightNode);
 
     expect(rootNode.traverseInOrder()).toEqual([1, 2, 3]);
 
@@ -78,9 +70,7 @@ describe('BinaryTreeNode', () => {
     const rightNode = new BinaryTreeNode(3);
     const rootNode = new BinaryTreeNode(2);
 
-    rootNode
-      .setLeft(leftNode)
-      .setRight(rightNode);
+    rootNode.setLeft(leftNode).setRight(rightNode);
 
     expect(rootNode.traverseInOrder()).toEqual([1, 2, 3]);
 
@@ -89,12 +79,16 @@ describe('BinaryTreeNode', () => {
 
     expect(rootNode.traverseInOrder()).toEqual([1, 2, 3, 5]);
 
-    expect(rootNode.replaceChild(rootNode.right, rootNode.right.right)).toBe(true);
+    expect(rootNode.replaceChild(rootNode.right, rootNode.right.right)).toBe(
+      true
+    );
     expect(rootNode.right.value).toBe(5);
     expect(rootNode.right.right).toBeNull();
     expect(rootNode.traverseInOrder()).toEqual([1, 2, 5]);
 
-    expect(rootNode.replaceChild(rootNode.right, rootNode.right.right)).toBe(false);
+    expect(rootNode.replaceChild(rootNode.right, rootNode.right.right)).toBe(
+      false
+    );
     expect(rootNode.traverseInOrder()).toEqual([1, 2, 5]);
 
     expect(rootNode.replaceChild(rootNode.right, replacementNode)).toBe(true);
@@ -103,7 +97,9 @@ describe('BinaryTreeNode', () => {
     expect(rootNode.replaceChild(rootNode.left, replacementNode)).toBe(true);
     expect(rootNode.traverseInOrder()).toEqual([5, 2, 5]);
 
-    expect(rootNode.replaceChild(new BinaryTreeNode(), new BinaryTreeNode())).toBe(false);
+    expect(
+      rootNode.replaceChild(new BinaryTreeNode(), new BinaryTreeNode())
+    ).toBe(false);
   });
 
   it('should calculate node height', () => {
@@ -117,17 +113,13 @@ describe('BinaryTreeNode', () => {
     expect(root.height).toBe(0);
     expect(root.balanceFactor).toBe(0);
 
-    root
-      .setLeft(left)
-      .setRight(right);
+    root.setLeft(left).setRight(right);
 
     expect(root.height).toBe(1);
     expect(left.height).toBe(0);
     expect(root.balanceFactor).toBe(0);
 
-    left
-      .setLeft(grandLeft)
-      .setRight(grandRight);
+    left.setLeft(grandLeft).setRight(grandRight);
 
     expect(root.height).toBe(2);
     expect(left.height).toBe(1);
@@ -273,9 +265,7 @@ describe('BinaryTreeNode', () => {
     const left = new BinaryTreeNode('left');
     const right = new BinaryTreeNode('right');
 
-    root
-      .setLeft(left)
-      .setRight(right);
+    root.setLeft(left).setRight(right);
 
     expect(root.toString()).toBe('left,root,right');
 
@@ -283,9 +273,7 @@ describe('BinaryTreeNode', () => {
     const newLeft = new BinaryTreeNode('new_left');
     const newRight = new BinaryTreeNode('new_right');
 
-    newRoot
-      .setLeft(newLeft)
-      .setRight(newRight);
+    newRoot.setLeft(newLeft).setRight(newRight);
 
     expect(newRoot.toString()).toBe('new_left,new_root,new_right');
 

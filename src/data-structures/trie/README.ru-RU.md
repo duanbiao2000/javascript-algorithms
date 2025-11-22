@@ -18,7 +18,7 @@
 
 ![Префиксное дерево](./images/trie.jpg)
 
-*Made with [okso.app](https://okso.app)*
+_Made with [okso.app](https://okso.app)_
 
 На рисунке представлено префиксное дерево, содержащее ключи «A», «to», «tea», «ted», «ten», «i», «in», «inn».
 

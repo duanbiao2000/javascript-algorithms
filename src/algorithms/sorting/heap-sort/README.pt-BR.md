@@ -11,9 +11,9 @@ Heapsort é um algoritmo de ordenação baseado em comparação. O Heapsort pode
 
 ## Complexidade
 
-| Nome                  | Melhor            | Média             | Pior               | Memória    | Estável    | Comentários  |
-| --------------------- | :-------------: | :-----------------: | :-----------------: | :-------: | :-------: | :-------- |
-| **Heap sort**         | n&nbsp;log(n)   | n&nbsp;log(n)       | n&nbsp;log(n)       | 1         | Não        |           |
+| Nome          |    Melhor     |     Média     |     Pior      | Memória | Estável | Comentários |
+| ------------- | :-----------: | :-----------: | :-----------: | :-----: | :-----: | :---------- |
+| **Heap sort** | n&nbsp;log(n) | n&nbsp;log(n) | n&nbsp;log(n) |    1    |   Não   |             |
 
 ## Referências
 

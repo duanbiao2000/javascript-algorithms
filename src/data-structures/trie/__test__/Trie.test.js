@@ -20,7 +20,9 @@ describe('Trie', () => {
     expect(trie.head.toString()).toBe('*:c');
     expect(trie.head.getChild('c').toString()).toBe('c:a');
     expect(trie.head.getChild('c').getChild('a').toString()).toBe('a:t,r');
-    expect(trie.head.getChild('c').getChild('a').getChild('t').toString()).toBe('t*');
+    expect(trie.head.getChild('c').getChild('a').getChild('t').toString()).toBe(
+      't*'
+    );
   });
 
   it('should delete words from trie', () => {

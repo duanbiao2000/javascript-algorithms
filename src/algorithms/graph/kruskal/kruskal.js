@@ -10,7 +10,7 @@ export default function kruskal(graph) {
   // It should fire error if graph is directed since the algorithm works only
   // for undirected graphs.
   if (graph.isDirected) {
-    throw new Error('Kruskal\'s algorithms works only for undirected graphs');
+    throw new Error("Kruskal's algorithms works only for undirected graphs");
   }
 
   // Init new graph that will contain minimum spanning tree of original graph.
@@ -49,7 +49,9 @@ export default function kruskal(graph) {
     const currentEdge = sortedEdges[edgeIndex];
 
     // Check if edge forms the cycle. If it does then skip it.
-    if (!disjointSet.inSameSet(currentEdge.startVertex, currentEdge.endVertex)) {
+    if (
+      !disjointSet.inSameSet(currentEdge.startVertex, currentEdge.endVertex)
+    ) {
       // Unite two subsets into one.
       disjointSet.union(currentEdge.startVertex, currentEdge.endVertex);
 

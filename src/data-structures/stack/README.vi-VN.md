@@ -19,7 +19,7 @@ Biểu diễn đơn giản về thời gian chạy của một ngăn xếp với
 
 ![Stack](./images/stack.jpeg)
 
-*Made with [okso.app](https://okso.app)*
+_Made with [okso.app](https://okso.app)_
 
 ## Tham Khảo
 

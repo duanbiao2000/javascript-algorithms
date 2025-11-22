@@ -31,10 +31,12 @@ describe('caesarCipher', () => {
   });
 
   it('should encrypt and decrypt full phrases', () => {
-    expect(caesarCipherEncrypt('THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG', 23))
-      .toBe('qeb nrfzh yoltk clu grjmp lsbo qeb ixwv ald');
+    expect(
+      caesarCipherEncrypt('THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG', 23)
+    ).toBe('qeb nrfzh yoltk clu grjmp lsbo qeb ixwv ald');
 
-    expect(caesarCipherDecrypt('qeb nrfzh yoltk clu grjmp lsbo qeb ixwv ald', 23))
-      .toBe('the quick brown fox jumps over the lazy dog');
+    expect(
+      caesarCipherDecrypt('qeb nrfzh yoltk clu grjmp lsbo qeb ixwv ald', 23)
+    ).toBe('the quick brown fox jumps over the lazy dog');
   });
 });

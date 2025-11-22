@@ -10,7 +10,7 @@
 
 ![Hash Collision](./images/collision-resolution.jpeg)
 
-*Made with [okso.app](https://okso.app)*
+_Made with [okso.app](https://okso.app)_
 
 ## 参考
 

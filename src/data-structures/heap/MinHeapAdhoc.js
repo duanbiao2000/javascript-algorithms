@@ -50,14 +50,10 @@ class MinHeapAdhoc {
     let nodeIndex = 0;
 
     while (
-      (
-        this.hasLeftChild(nodeIndex)
-        && this.heap[nodeIndex] > this.leftChild(nodeIndex)
-      )
-      || (
-        this.hasRightChild(nodeIndex)
-        && this.heap[nodeIndex] > this.rightChild(nodeIndex)
-      )
+      (this.hasLeftChild(nodeIndex) &&
+        this.heap[nodeIndex] > this.leftChild(nodeIndex)) ||
+      (this.hasRightChild(nodeIndex) &&
+        this.heap[nodeIndex] > this.rightChild(nodeIndex))
     ) {
       const leftIndex = this.getLeftChildIndex(nodeIndex);
       const rightIndex = this.getRightChildIndex(nodeIndex);

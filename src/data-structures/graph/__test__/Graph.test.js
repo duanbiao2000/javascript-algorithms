@@ -9,9 +9,7 @@ describe('Graph', () => {
     const vertexA = new GraphVertex('A');
     const vertexB = new GraphVertex('B');
 
-    graph
-      .addVertex(vertexA)
-      .addVertex(vertexB);
+    graph.addVertex(vertexA).addVertex(vertexB);
 
     expect(graph.toString()).toBe('A,B');
     expect(graph.getVertexByKey(vertexA.getKey())).toEqual(vertexA);
@@ -130,9 +128,7 @@ describe('Graph', () => {
     const edgeAB = new GraphEdge(vertexA, vertexB);
     const edgeAC = new GraphEdge(vertexA, vertexC);
 
-    graph
-      .addEdge(edgeAB)
-      .addEdge(edgeAC);
+    graph.addEdge(edgeAB).addEdge(edgeAC);
 
     const neighbors = graph.getNeighbors(vertexA);
 
@@ -150,9 +146,7 @@ describe('Graph', () => {
 
       const edgeAB = new GraphEdge(vertexA, vertexB);
 
-      graph
-        .addEdge(edgeAB)
-        .addEdge(edgeAB);
+      graph.addEdge(edgeAB).addEdge(edgeAB);
     }
 
     expect(addSameEdgeTwice).toThrow();
@@ -168,9 +162,7 @@ describe('Graph', () => {
     const edgeAB = new GraphEdge(vertexA, vertexB);
     const edgeBC = new GraphEdge(vertexB, vertexC);
 
-    graph
-      .addEdge(edgeAB)
-      .addEdge(edgeBC);
+    graph.addEdge(edgeAB).addEdge(edgeBC);
 
     const edges = graph.getAllEdges();
 
@@ -192,11 +184,7 @@ describe('Graph', () => {
     const edgeCD = new GraphEdge(vertexC, vertexD);
     const edgeAD = new GraphEdge(vertexA, vertexD);
 
-    graph
-      .addEdge(edgeAB)
-      .addEdge(edgeBC)
-      .addEdge(edgeCD)
-      .addEdge(edgeAD);
+    graph.addEdge(edgeAB).addEdge(edgeBC).addEdge(edgeCD).addEdge(edgeAD);
 
     expect(graph.getWeight()).toBe(0);
   });
@@ -214,11 +202,7 @@ describe('Graph', () => {
     const edgeCD = new GraphEdge(vertexC, vertexD, 3);
     const edgeAD = new GraphEdge(vertexA, vertexD, 4);
 
-    graph
-      .addEdge(edgeAB)
-      .addEdge(edgeBC)
-      .addEdge(edgeCD)
-      .addEdge(edgeAD);
+    graph.addEdge(edgeAB).addEdge(edgeBC).addEdge(edgeCD).addEdge(edgeAD);
 
     expect(graph.getWeight()).toBe(10);
   });
@@ -234,10 +218,7 @@ describe('Graph', () => {
     const edgeBC = new GraphEdge(vertexB, vertexC);
     const edgeAC = new GraphEdge(vertexA, vertexC);
 
-    graph
-      .addEdge(edgeAB)
-      .addEdge(edgeBC)
-      .addEdge(edgeAC);
+    graph.addEdge(edgeAB).addEdge(edgeBC).addEdge(edgeAC);
 
     expect(graph.getAllEdges().length).toBe(3);
 
@@ -277,10 +258,7 @@ describe('Graph', () => {
     const edgeCD = new GraphEdge(vertexC, vertexD);
 
     const graph = new Graph(true);
-    graph
-      .addEdge(edgeAB)
-      .addEdge(edgeAC)
-      .addEdge(edgeCD);
+    graph.addEdge(edgeAB).addEdge(edgeAC).addEdge(edgeCD);
 
     expect(graph.toString()).toBe('A,B,C,D');
     expect(graph.getAllEdges().length).toBe(3);
@@ -317,11 +295,7 @@ describe('Graph', () => {
     const edgeBD = new GraphEdge(vertexB, vertexD);
 
     const graph = new Graph();
-    graph
-      .addEdge(edgeAB)
-      .addEdge(edgeBC)
-      .addEdge(edgeCD)
-      .addEdge(edgeBD);
+    graph.addEdge(edgeAB).addEdge(edgeBC).addEdge(edgeCD).addEdge(edgeBD);
 
     const verticesIndices = graph.getVerticesIndices();
     expect(verticesIndices).toEqual({
@@ -344,11 +318,7 @@ describe('Graph', () => {
     const edgeBD = new GraphEdge(vertexB, vertexD);
 
     const graph = new Graph();
-    graph
-      .addEdge(edgeAB)
-      .addEdge(edgeBC)
-      .addEdge(edgeCD)
-      .addEdge(edgeBD);
+    graph.addEdge(edgeAB).addEdge(edgeBC).addEdge(edgeCD).addEdge(edgeBD);
 
     const adjacencyMatrix = graph.getAdjacencyMatrix();
     expect(adjacencyMatrix).toEqual([
@@ -371,11 +341,7 @@ describe('Graph', () => {
     const edgeBD = new GraphEdge(vertexB, vertexD, 7);
 
     const graph = new Graph(true);
-    graph
-      .addEdge(edgeAB)
-      .addEdge(edgeBC)
-      .addEdge(edgeCD)
-      .addEdge(edgeBD);
+    graph.addEdge(edgeAB).addEdge(edgeBC).addEdge(edgeCD).addEdge(edgeBD);
 
     const adjacencyMatrix = graph.getAdjacencyMatrix();
     expect(adjacencyMatrix).toEqual([

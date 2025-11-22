@@ -5,23 +5,45 @@ describe('weightedRandom', () => {
     const getWeightedRandomWithInvalidInputs = () => {
       weightedRandom(['a', 'b', 'c'], [10, 0]);
     };
-    expect(getWeightedRandomWithInvalidInputs).toThrow('Items and weights must be of the same size');
+    expect(getWeightedRandomWithInvalidInputs).toThrow(
+      'Items and weights must be of the same size'
+    );
   });
 
   it('should throw an error when the number of weights or items are empty', () => {
     const getWeightedRandomWithInvalidInputs = () => {
       weightedRandom([], []);
     };
-    expect(getWeightedRandomWithInvalidInputs).toThrow('Items must not be empty');
+    expect(getWeightedRandomWithInvalidInputs).toThrow(
+      'Items must not be empty'
+    );
   });
 
   it('should correctly do random selection based on wights in straightforward cases', () => {
-    expect(weightedRandom(['a', 'b', 'c'], [1, 0, 0])).toEqual({ index: 0, item: 'a' });
-    expect(weightedRandom(['a', 'b', 'c'], [0, 1, 0])).toEqual({ index: 1, item: 'b' });
-    expect(weightedRandom(['a', 'b', 'c'], [0, 0, 1])).toEqual({ index: 2, item: 'c' });
-    expect(weightedRandom(['a', 'b', 'c'], [0, 1, 1])).not.toEqual({ index: 0, item: 'a' });
-    expect(weightedRandom(['a', 'b', 'c'], [1, 0, 1])).not.toEqual({ index: 1, item: 'b' });
-    expect(weightedRandom(['a', 'b', 'c'], [1, 1, 0])).not.toEqual({ index: 2, item: 'c' });
+    expect(weightedRandom(['a', 'b', 'c'], [1, 0, 0])).toEqual({
+      index: 0,
+      item: 'a',
+    });
+    expect(weightedRandom(['a', 'b', 'c'], [0, 1, 0])).toEqual({
+      index: 1,
+      item: 'b',
+    });
+    expect(weightedRandom(['a', 'b', 'c'], [0, 0, 1])).toEqual({
+      index: 2,
+      item: 'c',
+    });
+    expect(weightedRandom(['a', 'b', 'c'], [0, 1, 1])).not.toEqual({
+      index: 0,
+      item: 'a',
+    });
+    expect(weightedRandom(['a', 'b', 'c'], [1, 0, 1])).not.toEqual({
+      index: 1,
+      item: 'b',
+    });
+    expect(weightedRandom(['a', 'b', 'c'], [1, 1, 0])).not.toEqual({
+      index: 2,
+      item: 'c',
+    });
   });
 
   it('should correctly do random selection based on wights', () => {
@@ -57,8 +79,12 @@ describe('weightedRandom', () => {
         i.e. item with the index of 2 must be selected 600 times (ideally)
         or with the threshold of [600 - 50, 600 + 50] times.
        */
-      expect(counter[itemIndex]).toBeGreaterThan(ATTEMPTS_NUM * weights[itemIndex] - THRESHOLD);
-      expect(counter[itemIndex]).toBeLessThan(ATTEMPTS_NUM * weights[itemIndex] + THRESHOLD);
+      expect(counter[itemIndex]).toBeGreaterThan(
+        ATTEMPTS_NUM * weights[itemIndex] - THRESHOLD
+      );
+      expect(counter[itemIndex]).toBeLessThan(
+        ATTEMPTS_NUM * weights[itemIndex] + THRESHOLD
+      );
     }
   });
 });

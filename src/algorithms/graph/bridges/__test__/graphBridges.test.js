@@ -16,10 +16,7 @@ describe('graphBridges', () => {
 
     const graph = new Graph();
 
-    graph
-      .addEdge(edgeAB)
-      .addEdge(edgeBC)
-      .addEdge(edgeCD);
+    graph.addEdge(edgeAB).addEdge(edgeBC).addEdge(edgeCD);
 
     const bridges = Object.values(graphBridges(graph));
 
@@ -42,11 +39,7 @@ describe('graphBridges', () => {
 
     const graph = new Graph();
 
-    graph
-      .addEdge(edgeAB)
-      .addEdge(edgeAC)
-      .addEdge(edgeBC)
-      .addEdge(edgeCD);
+    graph.addEdge(edgeAB).addEdge(edgeAC).addEdge(edgeBC).addEdge(edgeCD);
 
     const bridges = Object.values(graphBridges(graph));
 

@@ -18,8 +18,8 @@ représentées par des entiers ou des références.
 
 ![Graph](./images/graph.jpeg)
 
-*Made with [okso.app](https://okso.app)*
+_Made with [okso.app](https://okso.app)_
 
 ## References
 
-- [Wikipedia](https://fr.wikipedia.org/wiki/Graphe_(type_abstrait))
+- [Wikipedia](<https://fr.wikipedia.org/wiki/Graphe_(type_abstrait)>)

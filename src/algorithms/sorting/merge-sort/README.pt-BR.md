@@ -28,9 +28,9 @@ emular merge sort (top-down).
 
 ## Complexidade
 
-| Nome                  | Melhor            | Média             | Pior               | Memória    | Estável    | Comentários  |
-| --------------------- | :-------------: | :-----------------: | :-----------------: | :-------: | :-------: | :-------- |
-| **Merge sort**        | n&nbsp;log(n)   | n&nbsp;log(n)       | n&nbsp;log(n)       | n         | Sim       |           |
+| Nome           |    Melhor     |     Média     |     Pior      | Memória | Estável | Comentários |
+| -------------- | :-----------: | :-----------: | :-----------: | :-----: | :-----: | :---------- |
+| **Merge sort** | n&nbsp;log(n) | n&nbsp;log(n) | n&nbsp;log(n) |    n    |   Sim   |             |
 
 ## Referências
 

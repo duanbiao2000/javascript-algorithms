@@ -14,7 +14,7 @@ _Read this in other languages:_
 
 ![이중 연결 리스트](./images/doubly-linked-list.jpeg)
 
-*Made with [okso.app](https://okso.app)*
+_Made with [okso.app](https://okso.app)_
 
 두 개의 노드 링크를 사용하면 어느 방향으로든 리스트를 순회할 수 있습니다.
 이중 연결 리스트에서 노드를 추가하거나 제거하려면, 단일 연결 리스트에서 동일한 작업보다 더 많은 링크를 변경해야 하지만, 첫 번째 노드 이외의 노드인 경우 작업을 추적할 필요가 없으므로 작업이 더 단순해져 잠재적으로 더 효율적입니다.
@@ -95,9 +95,9 @@ end Reverse Traversal
 
 ## 시간 복잡도
 
-| Access    | Search    | Insertion | Deletion  |
-| :-------: | :-------: | :-------: | :-------: |
-| O(n)      | O(n)      | O(1)      | O(n)      |
+| Access | Search | Insertion | Deletion |
+| :----: | :----: | :-------: | :------: |
+|  O(n)  |  O(n)  |   O(1)    |   O(n)   |
 
 ### 공간 복잡도
 

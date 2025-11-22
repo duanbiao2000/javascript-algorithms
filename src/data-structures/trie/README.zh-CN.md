@@ -10,7 +10,7 @@
 
 ![Trie](./images/trie.jpg)
 
-*Made with [okso.app](https://okso.app)*
+_Made with [okso.app](https://okso.app)_
 
 ## 参考
 
